@@ -13,8 +13,29 @@
     </div>
 
     <script>
-    window.lat = 37.7850;
-    window.lng = -122.4383;
+    window.lat = 41.964691;
+    window.lng = -86.362945;
+
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(updatePosition);
+        }
+
+        return null;
+    };
+
+    function updatePosition(position) {
+      if (position) {
+        window.lat = position.coords.latitude;
+        window.lng = position.coords.longitude;
+      }
+    }
+
+    setInterval(function(){updatePosition(getLocation());}, 10000);
+
+    function currentLocation() {
+      return {lat:window.lat, lng:window.lng};
+    };
 
     var map;
     var mark;
@@ -56,7 +77,7 @@
     pubnub.addListener({message:redraw});
 
     setInterval(function() {
-      pubnub.publish({channel:pnChannel, message:{lat:window.lat + 0.001, lng:window.lng + 0.01}});
+      pubnub.publish({channel:pnChannel, message:currentLocation()});
     }, 500);
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEdBL5D8fXeC0f7VTJF-RM4ITKOPY2tjw&callback=initialize"></script>
