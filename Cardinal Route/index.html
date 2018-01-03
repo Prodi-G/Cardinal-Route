@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cardinal Route</title>
+
+    <!-- PubNub JS -->
+    <script src="https://cdn.pubnub.com/sdk/javascript/pubnub.4.19.0.min.js"></script>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+    <!-- Custom Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="../Cardinal Route/css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../Cardinal Route/css/common.css" type="text/css">
+    <link rel="stylesheet" href="../Cardinal Route/css/front-page.css" type="text/css">
+
+</head>
+
+<!------------------------------------------------------------>
+<!------------------------------------------------------------>
+
+<body id="page-top">
+
+<div id="nav-placeholder"></div>
+
+<!------------------------------------------------------------>
+<!------------------------------------------------------------>
+
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1>No Car? No Problem!</h1>
+                <hr>
+                <p>Cardinal Route is a student led transportation system
+                <br> AND <br> a site for all your University needs.</p>
+                <a href="#services" class="btn btn-primary btn-xl page-scroll headbtn">Find Out More</a>
+            </div>
+        </div>
+    </header>
+
+<!------------------------------------------------------------>
+<!------------------------------------------------------------>
+
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h2 class="section-heading text-center">At Your Service</h2>
+                    <hr class="small">
+                    <div class="row text-center">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="glyphicon glyphicon-road fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Get A Ride</strong>
+                                </h4>
+                                <p>We can show you the world. Shimmering, shining, splendid.</p>
+                                <a href="#direction" class="btn btn-info page-scroll">Gas Money</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="glyphicon glyphicon-shopping-cart fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Order Food</strong>
+                                </h4>
+                                <p>Every store in Berrien Springs now does delivery with this nifty system.</p>
+                                <a href="../pages/food.html" class="btn btn-info">I'm Hungry</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="glyphicon glyphicon-comment fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Soap Box</strong>
+                                </h4>
+                                <p>Tell us where Andrews hurts so we can make the booboo go away.</p>
+                                <a href="../pages/soap.html" class="btn btn-info">Lick the bandade</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-shield fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Quick Links</strong>
+                                </h4>
+                                <p>Student movement website, campus events, gym schedules, and more!</p>
+                                <a href="../pages/links.html" class="btn btn-info">Teleport</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+
+<!------------------------------------------------------------>
+<!------------------------------------------------------------>
+ <!-- Map -->
+    <section id="direction" class="container">
+      <div id="map-canvas" class="map-responsive"></div>
+    </section>
+
+<!------------------------------------------------------------>
+<!------------------------------------------------------------>
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Let's Get In Touch!</h2>
+                    <hr class="primary">
+                    <p>Have a set of wheels and not afraid to use them? That's great! Text or email us to show your interest and we will get back to you as soon as possible!</p>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2 text-center">
+                    <i class="fa fa-phone fa-3x wow bounceIn"></i>
+                    <p>269-815-2216</p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                    <p><a href="mailto:anesu96@gmail.com">anesu96@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!------------------------------------------------------------>
+<!------------------------------------------------------------>
+
+    <!-- jQuery -->
+    <script src="../Cardinal Route/js/jquery.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../Cardinal Route/js/jquery.easing.min.js"></script>
+    <script src="../Cardinal Route/js/jquery.fittext.js"></script>
+    <script src="../Cardinal Route/js/wow.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../Cardinal Route/js/creative.js"></script>
+
+    <!-- Google Maps JavaScript -->
+    <script>
+    window.lat = 41.964691;
+    window.lng = -86.362945;
+
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(updatePosition);
+        }
+
+        return null;
+    };
+
+    function updatePosition(position) {
+      if (position) {
+        window.lat = position.coords.latitude;
+        window.lng = position.coords.longitude;
+      }
+    }
+
+    setInterval(function(){updatePosition(getLocation());}, 10000);
+
+    function currentLocation() {
+      return {lat:window.lat, lng:window.lng};
+    };
+
+    var map;
+    var mark;
+    var lineCoords = [];
+
+    var initialize = function() {
+      map  = new google.maps.Map(document.getElementById('map-canvas'), {center:{lat:lat,lng:lng},zoom:12});
+      mark = new google.maps.Marker({position:{lat:lat, lng:lng}, map:map});
+    };
+
+    window.initialize = initialize;
+
+    var redraw = function(payload) {
+      lat = payload.message.lat;
+      lng = payload.message.lng;
+
+      map.setCenter({lat:lat, lng:lng, alt:0});
+      mark.setPosition({lat:lat, lng:lng, alt:0});
+
+      lineCoords.push(new google.maps.LatLng(lat, lng));
+
+      var lineCoordinatesPath = new google.maps.Polyline({
+        path: lineCoords,
+        geodesic: true,
+        strokeColor: '#2E10FF'
+      });
+
+      lineCoordinatesPath.setMap(map);
+    };
+
+    var pnChannel = "map3-channel";
+
+    var pubnub = new PubNub({
+      publishKey:   'pub-c-481d8c15-850a-4566-9de2-07e9e50eae1c',
+      subscribeKey: 'sub-c-3a61b858-ee76-11e7-b8a6-46d99af2bb8c'
+    });
+
+    pubnub.subscribe({channels: [pnChannel]});
+    pubnub.addListener({message:redraw});
+
+    setInterval(function() {
+      pubnub.publish({channel:pnChannel, message:currentLocation()});
+    }, 500);
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEdBL5D8fXeC0f7VTJF-RM4ITKOPY2tjw&callback=initialize"></script>
+
+</body>
+
+</html>
